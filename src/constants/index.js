@@ -7,8 +7,17 @@ export const HERO_CONTENT = `I am a passionate full stack developer with a knack
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 export const EXPERIENCES = [
+   {
+    year: "2025 - Present ~ 6 Months",
+    role: "Frontend Developer Intern",
+    company: "Digital Guruji",
+    description: `Built and optimized scalable, responsive web applications using JavaScript and React.js, tailored for startup environments with fast iteration needs.
+
+Designed reusable UI components and implemented frontend best practices to enhance performance, maintainability, and scalability.`,
+    technologies: ["HTML", "CSS", "Javascript"],
+  },
   {
-    year: "2024 - Present",
+    year: "2024 - 2 Months",
     role: "Web Developer Intern",
     company: "Octanet Inc.",
     description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
@@ -44,7 +53,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "6-1-215, Rajendranager, Hyderabad",
-  phoneNo: "+91 8790 5407 96 ",
+  address: "6-1-215, Rajendranagar, Telangana",
+  phoneNo: "+91 8790540796 ",
   email: "junaids5954@gmail.com",
 };
