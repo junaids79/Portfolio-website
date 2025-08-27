@@ -20,11 +20,7 @@ const Navbar = () => {
       <a href="https://x.com/Junaid5954" target="_blank" rel="noopener noreferrer">
         <FaSquareXTwitter className="hover:text-black transition-colors"/>
       </a>
-     <a
-            href="src\components\Junaid's Resume.pdf"              className="inline-flex items-center rounded-md bg-black text-white px-5 py-3 text-sm md:text-base font-medium focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-black"
-            >
-              View Resume
-            </a>
+   
     </div>
    </nav>
   )
