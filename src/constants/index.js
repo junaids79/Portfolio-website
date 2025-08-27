@@ -8,7 +8,7 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
    {
-    year: "2025 - Present ~ 6 Months",
+    year: "2025 - May–Oct  (6 Months)",
     role: "Frontend Developer Intern",
     company: "Digital Guruji",
     description: `Built and optimized scalable, responsive web applications using JavaScript and React.js, tailored for startup environments with fast iteration needs.
