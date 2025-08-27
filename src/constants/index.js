@@ -16,13 +16,7 @@ export const EXPERIENCES = [
 Designed reusable UI components and implemented frontend best practices to enhance performance, maintainability, and scalability.`,
     technologies: ["HTML", "CSS", "Javascript"],
   },
-  {
-    year: "2024 - 2 Months",
-    role: "Web Developer Intern",
-    company: "Octanet Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["HTML", "CSS", "Javascript", "Bootstrap"],
-  },
+  
   
 ];
 
