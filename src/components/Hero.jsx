@@ -1,102 +1,69 @@
-import profilePic from "../assets/JSJPG.jpg";
-import { motion } from "framer-motion";
-
-const container = (delay) => ({
-  hidden: { x: -100, opacity: 0 },
-  visible: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: 0.6, delay },
+const socials = [
+  {
+    label: 'GitHub',
+    href: 'https://github.com/junaids79',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+      </svg>
+    ),
   },
-});
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/junaid-shareef-2a775b2b9/',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+        <rect x="2" y="9" width="4" height="12" />
+        <circle cx="4" cy="4" r="2" />
+      </svg>
+    ),
+  },
+  {
+    label: 'LeetCode',
+    href: 'https://leetcode.com/u/junaidshareef07/',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+      </svg>
+    ),
+  },
+  {
+    label: 'Twitter / X',
+    href: 'https://x.com/Junaid5954',
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.748l7.73-8.835L1.254 2.25H8.08l4.213 5.567zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+      </svg>
+    ),
+  },
+]
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between 
-  px-8 py-20 pt-28 min-h-screen bg-gradient-to-b from-gray-900 to-black">
-      <div className="flex flex-wrap items-center">
-        {/* Left Content */}
-        <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
-            {/* Name */}
-            <motion.h1
-              variants={container(0)}
-              initial="hidden"
-              animate="visible"
-              className="pb-6 text-5xl font-extrabold tracking-tight lg:mt-16 lg:text-6xl"
-            >
-              Junaid Shareef
-            </motion.h1>
-
-            {/* Role */}
-            <motion.span
-              variants={container(0.4)}
-              initial="hidden"
-              animate="visible"
-              className="bg-gradient-to-r from-pink-400 via-slate-400 to-purple-500 bg-clip-text text-3xl font-semibold tracking-tight text-transparent lg:text-4xl"
-            >
-              Full Stack Developer
-            </motion.span>
-
-            {/* Bio */}
-            <motion.p
-              variants={container(0.8)}
-              initial="hidden"
-              animate="visible"
-              className="my-6 max-w-xl text-lg font-light leading-relaxed text-neutral-300"
-            >
-              I am a passionate{" "}
-              <span className="font-medium text-white">full stack developer</span>{" "}
-              with 6 months of hands-on experience in building scalable web
-              applications. Skilled in{" "}
-              <span className="text-purple-400 font-medium">
-                React, Node.js, MongoDB
-              </span>{" "}
-              and{" "}
-              <span className="text-indigo-400 font-medium">Firebase</span>, I
-              craft user-friendly frontends and manage efficient backend
-              operations.
-            </motion.p>
-
-            {/* CTA Buttons */}
-            <motion.div
-              variants={container(1.2)}
-              initial="hidden"
-              animate="visible"
-              className="mt-4 flex gap-4"
-            >
-              <a
-                href="#projects"
-                className="rounded-xl bg-indigo-600 px-6 py-3 text-sm font-medium text-white shadow-md transition hover:bg-indigo-700"
-              >
-                View Projects
-              </a>
-              <a
-                href="#contact"
-                className="rounded-xl border border-indigo-400 px-6 py-3 text-sm font-medium text-indigo-300 transition hover:bg-indigo-500/10"
-              >
-                Contact Me
-              </a>
-            </motion.div>
-          </div>
-        </div>
-
-        {/* Right Profile Image */}
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center lg:justify-end">
-            <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1 }}
-              src={profilePic}
-              alt="Profile"
-              className="w-60 rounded-full border-4 border-indigo-500 shadow-lg shadow-indigo-900/40 lg:w-72"
-            />
-          </div>
-        </div>
+    <section id="hero" className="hero">
+      <div className="hero-badge">Open to SDE Internships &amp; Full-time Roles</div>
+      <h1 className="hero-heading">
+        Junaid Shareef
+        <br />
+        <em>Full Stack Developer</em>
+      </h1>
+      <p className="hero-sub">
+        MERN Stack developer &amp; DSA enthusiast crafting clean, scalable web applications.
+        CSE&apos;27 @ JPNCE, Hyderabad.
+      </p>
+      <div className="hero-cta">
+        <a href="#contact" className="btn-primary">Get in touch</a>
+        <a href="#projects" className="btn-outline">View projects</a>
+      </div>
+      <div className="hero-socials">
+        {socials.map(({ label, href, icon }) => (
+          <a key={label} href={href} target="_blank" rel="noreferrer" className="hero-social-link">
+            {icon}
+            {label}
+          </a>
+        ))}
       </div>
     </section>
-  );
-};
-
-export default Hero;
+  )
+}
