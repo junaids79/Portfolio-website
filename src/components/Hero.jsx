@@ -44,7 +44,7 @@ export default function Hero() {
     <section id="hero" className="hero">
       <div className="hero-badge">Open to SDE Internships &amp; Full-time Roles</div>
       <h1 className="hero-heading">
-        Junaid Shareef
+       Mohd Junaid Shareef
         <br />
         <em>Full Stack Developer</em>
       </h1>
