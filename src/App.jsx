@@ -7,7 +7,7 @@ import Projects from './components/Projects'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   return (
